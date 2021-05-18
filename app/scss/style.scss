@@ -1,0 +1,30 @@
+@import "variables";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "section6";
+
+
+
+
+/* ------Font------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* *::before *::after {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+

@@ -1,0 +1,113 @@
+.section-5 {
+    padding: 2rem 1rem;
+}
+
+.section-5-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel {
+    position: relative;
+}
+
+.left-content img {
+    width: 100%;
+    background-size: contain;
+}
+
+.right-content p {
+    margin: 1rem 0 3rem;
+    letter-spacing: 1px;
+}
+
+.right-content-img {
+    display: flex;
+    position: relative;
+}
+
+.right-content-img div {
+    border-top: 1px solid black;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+}
+
+.contact {
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.contact span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.5rem;
+}
+
+.slideshow-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 5rem;
+    z-index: 1;
+}
+
+
+
+.slideshow-btn img {
+    opacity: 1;
+}
+
+.carousel-control-prev img{
+    border-radius: 50%;
+    border: 1px solid $a-blue;
+    opacity: 1;
+    color: $a-blue;
+}
+
+.carousel-control-next img {
+    border-radius: 50%;
+    background-color: $a-blue;
+    margin-left: 5rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    .section-5-content {
+        flex-wrap: nowrap;
+    }
+
+
+    .right-content {
+        width: 50%;
+        padding: 0 1rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .section-5 {
+        padding: 5rem 5rem 6rem;
+    }
+
+    .right-content {
+        padding: 0 1rem 0 4rem;       
+    }
+
+    .right-content > p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 2px;
+    }
+
+
+    .contact {
+        font-size: 1rem;
+    }
+}

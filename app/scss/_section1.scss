@@ -1,0 +1,186 @@
+.section-1 {
+    background-image: url("/Images/BACKGROUND.png");
+    background-size: cover;
+    position: relative;
+   
+    
+}
+
+header {
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+#check-box {
+    cursor: pointer;
+    display: none;
+   
+  
+}
+
+ul {
+    list-style-type: none;
+    display: none;
+   
+    & li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    
+}
+
+#login {
+    opacity: 0;
+}
+
+
+.section-1-caption {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.section-1-detail {
+    color: white;
+    display: none;
+}
+
+#check-box:checked + ul.menu{
+    position: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    right: 0;
+    top: -16;
+    background-color: white;
+    border-radius: 10px 0;
+    text-align: right;
+    line-height: 2.5rem;
+    padding: 1rem 1rem 0 0;
+    margin: 0;
+    opacity: 0.9;
+    animation: open-menu 1s ease;
+
+}
+
+/*
+a:hover {
+    color: blue;
+}   
+*/
+
+@keyframes open-menu {
+    0% {
+        width: 0%;
+        right: -169px;
+    }
+    100% {
+        width: 40%;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-1 {
+        padding-bottom: 3.5rem;
+    }
+
+
+    header {
+        padding: 2rem 5rem;
+    }  
+    
+    .humburger {
+        display: none;
+    }   
+ 
+    ul.menu {
+        display: flex;
+        justify-content: space-between;
+  
+        & li {
+            padding: 0 0.75rem; 
+        }
+
+        & li a {
+            flex: 1;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .section-1-content {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        margin: 9rem 0 0 5rem;
+        padding-bottom: 5.5rem;
+        text-align: left;
+    }
+
+
+    .section-1-caption {
+        text-align: left;
+        font-size: 3.75rem;
+        font-weight: 900;
+        line-height: 1.05;
+        padding: 1rem 0;
+    }
+
+
+    .section-1-detail {
+        font-size: 1.25rem;
+        display: inline-block;
+        padding: 1rem 0;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+
+    #login {
+        opacity: 1;
+        padding: 0.75rem 3rem;
+        background-color: chocolate;
+        border-radius: 30px;
+    }    
+
+    a:hover {
+        opacity: 0.8;
+    }
+
+    #login:hover {
+        opacity: 0.8; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .section-1-content {
+        padding: 4rem 0 1.5rem 0;
+    }
+
+    .section-1-caption {
+        font-size: 4rem;
+        font-weight: 900;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-1-detail {
+        display: block;
+        font-size: 1.25rem;
+        text-align: center;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        line-height: 2rem;
+        padding: 0 0.75rem;
+    }
+    
+}

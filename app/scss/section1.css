@@ -1,0 +1,24 @@
+.section-1 {
+  background-image: url("/Images/BACKGROUND.png");
+  background-size: cover;
+}
+
+header {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check-box {
+  position: absolute;
+  opacity: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: none;
+}
+ul li a {
+  text-decoration: none;
+}/*# sourceMappingURL=section1.css.map */

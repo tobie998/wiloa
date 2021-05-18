@@ -1,0 +1,57 @@
+.card {
+    background-image: url("/Images/section-3-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 21.375rem;
+    margin: 4rem 1rem;
+    padding: 0 1rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.card-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-3-btn {
+    width: 190px;
+    height: 56px;
+    background-color: $very-light-pink;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: $very-light-pink;
+
+}
+
+@media screen and (min-width: 991px) {
+    .card {
+        height: 26.25rem;
+        margin: 8.5rem 5rem 7rem;
+    }
+    
+    .card-title {
+        font-size: 4rem;
+        font-weight: 900;
+    }
+    
+}
