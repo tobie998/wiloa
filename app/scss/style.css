@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 .section-1 {
-  background-image: url("/Images/BACKGROUND.png");
+  background-image: url(../Images/BACKGROUND.png);
   background-size: cover;
   position: relative;
 }
@@ -270,7 +270,7 @@ img.section-2-logo {
   }
 }
 .card {
-  background-image: url("/Images/section-3-bg.png");
+  background-image: url(../Images/section-3-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
